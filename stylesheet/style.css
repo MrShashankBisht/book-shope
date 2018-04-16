@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.head {
+    width: 100%;
+    margin: 0;
+    height: 700px;
+    background-color: #000;
+    background: url(../images/image1.jpg);
+    background-size: cover;
+}
+
+.head #Igbooks h1 {
+    margin: 0;
+    color: #a19e9c;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.head #Igbooks h1 p {
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*top: 5%;
+    left: 55%;
+    position: absolute; */
+}
+
+.navMenu {
+    height: 10%;
+    background: transparent;
+    margin-top: 40px;
+    /*  top: 15%;
+    left: 35%;
+    position: absolute;*/
+    text-align: center;
+}
+
+.navMenu a {
+    display: inline;
+    /*margin-right: 10px;*/
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    border-bottom: 1px solid sandybrown;
+}
+
+.navMenu a:hover {
+    background: orange;
+    opacity: 1;
+}
+
+.Sharelogo {
+    background: transparent;
+    top: 20%;
+    right: 93%;
+    position: absolute;
+    padding: 20px;
+    display: list-item;
+    border: none;
+}
+
+.Sharelogo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+
+.Sharelogo img:hover {
+    width: 40px;
+    height: 35px;
+    opacity: 1;
+    margin-bottom: 20px;
+    border-radius: 27px;
+    position: absolute;
+}
+
+.search {
+    width: 100%;
+    margin-top: 60px;
+    background: transparent;
+}
+
+.search p {
+    font-size: 15px;
+    color: #df7777;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.search p input[type="text"] {
+    width: 200px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    background: transparent;
+    border-bottom: 1px solid tan;
+    color: rgb(50, 85, 85);
+    margin-top: 5px;
+    text-align: center;
+}
+
+.search p input[type="text"]::-moz-placeholder {
+    color: rgb(49, 40, 40);
+}
+
+.search p input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #6d6ddf;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.search p input[type="submit"]:hover {
+    cursor: pointer;
+    background: sandybrown;
+    color: #000;
+    opacity: 1;
+}
+
+.head .message {
+    width: 100%;
+    top: 50%;
+    position: absolute;
+}
+
+.message h1 {
+    text-align: center;
+    color: orangered;
+}
+
+.message p {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.mid {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    color: #000;
+    background: rgb(226, 222, 222);
+}
+
+.mid .firstPerson,
+.secondPerson,
+.thirdPerson {
+    width: 34%;
+    height: 500px;
+}
+
+.mid .secondPerson img,
+.thirdPerson img {
+    width: 220px;
+    height: 311px;
+    margin-left: 20
+}
+
+.mid .firstPerson img,
+.secondPerson img,
+.thirdPerson img {
+    margin-left: 24%;
+}
+
+.mid .firstPerson h1,
+.secondPerson h1,
+.thirdPerson h1 {
+    text-align: center;
+    font-size: 17px;
+}
+
+.mid .firstPerson p,
+.secondPerson p,
+.thirdPerson p {
+    text-align: center;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.foot {
+    background-color: rgba(12, 71, 75, 0.747);
+    text-align: center;
+    font-size: 15px;
+    color: antiquewhite;
+}
+
+
+/* DEVICE WIDTH CONTENNING CODE  */
+
+@media screen and (max-width:600px) {
+    .head {
+        width: 100%;
+        height: 350px;
+        background-size: 100% 350px;
+        background-repeat: no-repeat;
+    }
+    .head #Igbooks h1 {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+    .head #Igbooks h1 p {
+        font-size: 10px;
+    }
+    .navMenu {
+        height: 7%;
+        width: 100%;
+        margin-top: 9px;
+        text-align: center;
+    }
+    .navMenu a {
+        margin-right: 5px;
+        margin: 0;
+        padding: 3px;
+    }
+    .Sharelogo {
+        background: transparent;
+        top: 25%;
+        right: 85%;
+        position: absolute;
+        display: inline;
+    }
+    .Sharelogo img {
+        width: 20px;
+        height: 20px;
+    }
+    .Sharelogo img:hover {
+        width: 25px;
+        height: 25px;
+    }
+    .search {
+        margin-top: 15px;
+    }
+    .head .search p {
+        text-align: center;
+    }
+    .search p input[type="text"] {
+        width: auto;
+        height: 15px;
+        font-size: 15px;
+    }
+    .search p input[type="submit"] {
+        width: auto;
+        height: 15px;
+        font-size: 15px;
+    }
+    .head .message {
+        margin: 0px;
+        width: 100%;
+        top: 45%;
+        position: absolute;
+    }
+    .message h1 {
+        text-align: center;
+        font-size: 15px;
+        color: orangered;
+    }
+    .message p {
+        text-align: center;
+        margin: 0px;
+        font-size: 10px;
+        color: white;
+        padding: 5px;
+    }
+    .mid {
+        margin-top: 0px;
+        width: 100%;
+        height: auto;
+        color: #000;
+        background: rgb(226, 222, 222);
+        display: list-item;
+    }
+    .mid .firstPerson,
+    .secondPerson,
+    .thirdPerson {
+        width: 100%;
+    }
+    .mid .secondPerson img,
+    .thirdPerson img {
+        widows: 220px;
+        height: 311px;
+        text-align: center;
+    }
+    .mid .firstPerson h1,
+    .secondPerson h1,
+    .thirdPerson h1 {
+        text-align: center;
+        font-size: 18px;
+    }
+    .mid .firstPerson p,
+    .secondPerson p,
+    .thirdPerson p {
+        text-align: center;
+        font-size: 15px;
+        margin: 10px;
+        padding: 5px;
+    }
+}
